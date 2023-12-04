@@ -1,0 +1,32 @@
+{
+      "train_before_save": {
+            "optimizer": "adam",
+            "loss": "mean_squared_error",
+            "epochs": 2400,
+            "batch_size": 8
+      },
+      "data_before_save": {
+            "stock": "ASML",
+            "period": "6mo",
+            "train_data_name": "OG",
+            "train_data": [
+                  "RSI",
+                  "AROOND_14",
+                  "AROONU_14",
+                  "AROONOSC_14",
+                  "MACD_12_26_9",
+                  "MACDh_12_26_9",
+                  "MACDs_12_26_9",
+                  "ADX_14",
+                  "DMP_14",
+                  "DMN_14"
+            ],
+            "start_data": " 2023-03-31 00:00:00-04:00",
+            "end_data": " 2023-07-17 00:00:00-04:00",
+            "num_train_points": 73
+      },
+      "data_after_save": {
+            "date_last_trained": " 2023-10-26 00:00:00-04:00",
+            "updated_data_len": 72
+      }
+}
