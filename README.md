@@ -11,10 +11,15 @@ This is a CLI interactive program. When you run the main file you will be prompt
 
 ## Files
 create_new_model.ipynb - skeleton for creating new models
+
 make_model_pipeline.py - saves the model in .keras format, as well as a json with the model's details which continuously gets updated, also saves predicitions/new data to csv
+
 my_models - Directory with model folders which contain files saved from above file
+
 createDS.py - Creates Dataset, uses moving window so LSTM accepts data. Can add other indicators here
+
 test_pipeline.py - Performs the predictions, comparisons, as well as creates the plots
+
 train_or_predict.py - Main file to run the program. Don't need to touch other files
 
 ## Technology
