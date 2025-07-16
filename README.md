@@ -49,18 +49,22 @@ Note: The LSTM.keras models may get corrupted when cloned down, to create a new 
 ## Output
 
 Prompted to choose a model, then you can choose to see what data would be going into it before deciding to update it or not
+
 <img width="991" height="398" alt="Screenshot 2025-07-15 at 10 09 52 PM" src="https://github.com/user-attachments/assets/c09e78ee-f408-4101-93b8-298d27eb1e17" />
 
 After training the model with the updated data you can either wait until after seeing its predicition to save it or save it now. Then you can see the models predicition for tomorrow, not very accurate lol, this was a quick model with only like 8 epochs.
+
 <img width="878" height="114" alt="Screenshot 2025-07-15 at 10 15 30 PM" src="https://github.com/user-attachments/assets/97223b83-c7a3-49c8-98af-a8b639d477a2" />
 
 After saving model and predicition you can choose to see a plot
+
 <img width="346" height="54" alt="Screenshot 2025-07-15 at 10 19 46 PM" src="https://github.com/user-attachments/assets/f4be5a01-942e-451f-8aec-50451ac37aee" />
 
 
 <img width="645" height="481" alt="Screenshot 2025-07-15 at 10 20 31 PM" src="https://github.com/user-attachments/assets/71baf6ed-4ae5-41b2-839a-2c9e8fbbb1ec" />
 
 As you can see our model has predicted that this stocks price goes down tomorrow. Typically the plots will be larger, this was a quickly tained model.
+
 You can see mroe plots, and model performance through the model builder notebook.
 
 
