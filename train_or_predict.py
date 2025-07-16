@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 class update_or_predict():
 
     def __init__(self):
-        self.models = os.listdir('/Users/michael.rowe/Personal/IntrinsicValueProject/my_models')
+        self.models = os.listdir('my_models')
 
     def printchoices(self,models):
         for model in models:

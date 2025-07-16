@@ -1,6 +1,7 @@
 import json
 import tensorflow as tf
 import keras
+import os
 
 class make_model():
     def __init__(self,model_name,model,optimizer,loss,epochs,batch_size,stock,period,train_data_name,train_data,start_data,end_data,num_train_points):
@@ -24,10 +25,12 @@ class make_model():
         data_before_save = {"stock":self.stock,"period":self.period,"train_data_name":self.train_data_name,"train_data":self.train_data,"start_data":self.start_data,"end_data":self.end_data,"num_train_points":self.num_train_points}
         data_after_save = {"date_last_trained":self.end_data,"updated_data_len":0}
         big_dict = {"train_before_save":train_before_save,"data_before_save":data_before_save,"data_after_save":data_after_save}
-        with open("/Users/michael.rowe/Personal/IntrinsicValueProject/my_models/"+ self.model_name + "/" + self.model_name + ".json","w") as outfile:
+        with open("my_models/"+ self.model_name + "/" + self.model_name + ".json","w") as outfile:
             json.dump(big_dict,outfile,indent = 6)
 
     def save_model(self):
-        self.model.save("/Users/michael.rowe/Personal/IntrinsicValueProject/my_models/"+ self.model_name + "/" + self.model_name + ".keras")
+        print("Saving model: " + self.model_name)
+        os.makedirs("my_models/"+self.model_name+"/", exist_ok=True)
+        self.model.save("my_models/"+ self.model_name + "/" + self.model_name + ".keras")
 
     
