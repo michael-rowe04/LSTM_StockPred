@@ -60,7 +60,8 @@ After saving model and predicition you can choose to see a plot
 
 <img width="645" height="481" alt="Screenshot 2025-07-15 at 10 20 31 PM" src="https://github.com/user-attachments/assets/71baf6ed-4ae5-41b2-839a-2c9e8fbbb1ec" />
 
-As you can see our model has predicted that this stocks price goes down tomorrow.
+As you can see our model has predicted that this stocks price goes down tomorrow. Typically the plots will be larger, this was a quickly tained model.
+You can see mroe plots, and model performance through the model builder notebook.
 
 
 
